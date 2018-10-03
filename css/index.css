@@ -1,0 +1,143 @@
+.navbar-brand{
+    font-family:algerian;
+    font-size:29px;
+    color:white;
+    animation-name: mixcolortext;
+    animation:mixcolortext 20s infinite;
+} 
+
+
+
+@keyframes mixcolortext{
+    0%{color:lightgray }
+    50%{color: goldenrod}
+    /* 70%{color: orange} */
+    75%{color: white}
+    100%{color: yellow}
+}
+
+.nav-link{
+    padding:5px;
+    font-family:algeria;
+    /* animation-name: colortext;
+    animation:colortext 10s infinite; */
+}
+
+.nav-link:hover{
+font-family: algerian;
+animation-name: hovertext;
+animation: hovertext 1s alternate 1s;
+animation-delay: 1s;
+}
+
+@keyframes hovertext{
+0%{color: goldenrod}
+}
+
+/* @keyframes colortext{
+    30%{color:red }
+    50%{color: blue}
+    70%{color: orange}
+    90%{color: green}
+    100%{color: yellow}
+} */
+
+.background-image{
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('../image/wor.jpg');
+
+}
+
+@keyframes hovertext{
+0%{color: goldenrod}
+}
+
+.hover:hover{
+font-family: algerian;
+animation-name: hovertext;
+animation: hovertext 1s alternate 1s;
+animation-delay: 1s;
+}
+
+.background{
+    background-color:gray;
+    height: 100vh;
+}
+
+@media screen and (max-width: 600px){
+    .background{
+        height: 120vh;
+    }
+}
+
+h1{
+    color:white;
+    text-align: center;
+    font-family: algeria;
+    font-size:2rem;
+    padding-top: 20%;
+    text-transform:uppercase;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px){
+   h1{
+    padding-top:16rem;
+    text-transform:uppercase; 
+    font-size: 2rem;
+   }
+}
+/* 
+h1:hover{
+    color:aquamarine;
+} */
+
+@media screen and (max-width: 600px){
+    h1{
+        padding-top:19rem;
+        text-transform:capitalize; 
+        font-size: 2rem;
+    }
+}
+
+.image{
+    background-image: url('/image/IMG_10855.jpg');
+    height: 23vh;
+    width: 11vw;
+    border-radius: 50%;
+    background-size: contain;
+    margin-left: 46%;
+    margin-top: 2%;
+    border:5px solid white;
+    animation-name:changingimage;
+    animation: changingimage 35s infinite;
+    cursor: pointer;
+}
+
+
+@keyframes changingimage{
+    0%{background-image: url('/image/IMG_10855.jpg');}
+    30%{background-image: url('/image/IMG_20180426_172637.jpg');}
+    50%{background-image: url('/image/IMG_20180426_172711.jpg');}
+    80%{background-image: url('/image/IMG_20180426_172743.jpg');}
+    100%{background-image: url('/image/IMG_20180426_172743.jpg');}
+}
+
+@media screen and (max-width: 700px){
+    .image{
+        background-size:cover;
+        width:18vw;
+        height: 21vh;
+        border:4px solid white;
+        margin-left:40%;
+    }
+}
+
+.footer{
+    color:white;
+    font-size: 3vh;
+    font-family:algeria;
+}
+
